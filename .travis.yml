@@ -5,7 +5,6 @@ matrix:
       before_script:
         - sleep 15
       script:
-        - python -m unittest trav_test
         - echo 'pyth compiled'
         
     - language: java
