@@ -1,0 +1,27 @@
+matrix:
+  include:
+    - language: python
+      python: 3.6
+      before_script:
+        - sleep 15
+      script:
+        - python -m unittest trav_test
+        - echo 'pyth compiled'
+        
+    - language: java
+      before_script:
+        - sleep 15
+      script:
+        - echo 'java compiled'    
+
+    - language: cpp
+      before_script:
+        - sleep 15
+      script:
+        - echo 'cpp compiled'
+
+    - language: node_js
+      before_script:
+        - sleep 15
+      script:
+        - echo 'javascript compiled'
